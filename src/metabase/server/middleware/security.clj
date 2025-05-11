@@ -162,7 +162,7 @@
                                    (setting/get-value-of-type :string :snowplow-url))
                                  ;; Webpack dev server
                                  (when config/is-dev?
-                                   "*:8080 ws://*:8080")
+                                   "*:8081 ws://*:8080")
                                  ;; CLJS REPL
                                  (when config/is-dev?
                                    "ws://*:9630")]
@@ -227,7 +227,7 @@
   (when enabled?
     (merge
      (when (approved-origin? origin approved-origins)
-       {"Access-Control-Allow-Origin" origin
+       {"Access-Control-Allow-Origin" "*"
         "Vary"                        "Origin"})
      {"Access-Control-Allow-Headers"  "*"
       "Access-Control-Allow-Methods"  "*"

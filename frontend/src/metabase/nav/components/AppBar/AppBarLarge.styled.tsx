@@ -37,6 +37,15 @@ export const AppBarRightContainer = styled.div`
   justify-content: flex-end;
 `;
 
+export const AppBarCenterContainer = styled.div`
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  gap: 1rem;
+  max-width: 32.5rem;
+  justify-content: center;
+`;
+
 interface AppBarInfoContainerProps {
   isVisible?: boolean;
 }

@@ -23,6 +23,7 @@ export const BrowseNavSection = ({
 }) => {
   const BROWSE_MODELS_URL = "/browse/models";
   const BROWSE_DATA_URL = "/browse/databases";
+  const QUERY_GPT_URL = "/browse/querygpt";
   const BROWSE_METRICS_URL = "/browse/metrics";
 
   const [expandBrowse = true, setExpandBrowse] = useUserSetting(
@@ -82,6 +83,19 @@ export const BrowseNavSection = ({
           {t`Metrics`}
         </PaddedSidebarLink>
       )}
+
+      {hasDataAccess &&
+        (!isEmbeddingIframe || entityTypes.includes("table")) && (
+          <PaddedSidebarLink
+            icon="database"
+            url={QUERY_GPT_URL}
+            isSelected={nonEntityItem?.url?.startsWith(QUERY_GPT_URL)}
+            onClick={onItemSelect}
+            aria-label={t`QueryGPT`}
+          >
+            {t`QueryGPT`}
+          </PaddedSidebarLink>
+        )}
     </CollapseSection>
   );
 };

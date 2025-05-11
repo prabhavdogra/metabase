@@ -126,7 +126,7 @@ const itemButtonsPropTypes = {
 const TableBrowserItemButtons = ({ tableId, dbId, xraysEnabled }) => {
   return (
     <Fragment>
-      {xraysEnabled && (
+      {false && (
         <TableActionLink to={`/auto/dashboard/table/${tableId}`}>
           <Icon
             name="bolt_filled"

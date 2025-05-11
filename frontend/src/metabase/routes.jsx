@@ -67,6 +67,7 @@ import {
 import { createEntityIdRedirect } from "./routes-stable-id-aware";
 import { getSetting } from "./selectors/settings";
 import { getApplicationName } from "./selectors/whitelabel";
+import { QueryGPT } from "./browse/querygpt/QueryGPT";
 
 export const getRoutes = (store) => {
   const applicationName = getApplicationName(store.getState());
@@ -266,6 +267,7 @@ export const getRoutes = (store) => {
             <Route path="metrics" component={BrowseMetrics} />
             <Route path="models" component={BrowseModels} />
             <Route path="databases" component={BrowseDatabases} />
+            <Route path="querygpt" component={QueryGPT} />
             <Route path="databases/:slug" component={BrowseSchemas} />
             <Route
               path="databases/:dbId/schema/:schemaName"

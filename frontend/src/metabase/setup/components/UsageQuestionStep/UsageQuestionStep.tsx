@@ -46,7 +46,7 @@ export const UsageQuestionStep = ({ stepLabel }: NumberedStepProps) => {
   if (!isStepActive) {
     const title = isStepCompleted
       ? COMPLETED_STEP_TITLE[usageReason]
-      : t`What will you use Metabase for?`;
+      : t`What will you use SQLAI for?`;
     return (
       <InactiveStep
         title={title}
@@ -57,7 +57,7 @@ export const UsageQuestionStep = ({ stepLabel }: NumberedStepProps) => {
   }
 
   return (
-    <ActiveStep title={t`What will you use Metabase for?`} label={stepLabel}>
+    <ActiveStep title={t`What will you use SQLAI for?`} label={stepLabel}>
       <Radio.Group
         name="usage-reason"
         defaultValue="self-service-analytics"

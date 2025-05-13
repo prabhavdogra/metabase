@@ -11,14 +11,15 @@ export const SetupHelp = (): JSX.Element => {
     "configuring-metabase/setting-up-metabase",
   );
   return (
-    <SetupFooterRoot>
-      {t`If you feel stuck`},{" "}
-      <ExternalLink
-        className={CS.link}
-        href={docsUrl}
-        target="_blank"
-      >{t`our getting started guide`}</ExternalLink>{" "}
-      {t`is just a click away.`}
-    </SetupFooterRoot>
+    <></>
+    // <SetupFooterRoot>
+    //   {t`If you feel stuck`},{" "}
+    //   <ExternalLink
+    //     className={CS.link}
+    //     href={docsUrl}
+    //     target="_blank"
+    //   >{t`our getting started guide`}</ExternalLink>{" "}
+    //   {t`is just a click away.`}
+    // </SetupFooterRoot>
   );
 };

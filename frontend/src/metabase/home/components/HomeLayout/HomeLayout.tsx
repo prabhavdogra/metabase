@@ -47,7 +47,7 @@ export const HomeLayout = ({ children }: HomeLayoutProps): JSX.Element => {
           </LayoutEditButton>
         </Tooltip>
       )}
-      <LayoutBody>{children}</LayoutBody>
+      {/* <LayoutBody>{children}</LayoutBody> */}
       <CustomHomePageModal
         isOpen={showModal}
         onClose={() => setShowModal(false)}

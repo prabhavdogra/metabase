@@ -54,9 +54,9 @@ export const HomeContent = (): JSX.Element | null => {
     return <HomeRecentSection />;
   }
 
-  if (isXraySection(databases, isXrayEnabled)) {
-    return <HomeXraySection />;
-  }
+  // if (isXraySection(databases, isXrayEnabled)) {
+  //   return <HomeXraySection />;
+  // }
 
   return null;
 };

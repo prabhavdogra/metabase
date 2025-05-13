@@ -190,7 +190,7 @@ export function MainNavbarView({
             >
               {t`Home`}
             </PaddedSidebarLink>
-            {showOnboardingLink && (
+            {false && (
               <PaddedSidebarLinkDismissible
                 icon="learn"
                 right={
@@ -228,7 +228,7 @@ export function MainNavbarView({
             </SidebarSection>
           )}
 
-          <SidebarSection>
+          {/* <SidebarSection>
             <ErrorBoundary>
               <CollectionSectionHeading
                 currentUser={currentUser}
@@ -243,7 +243,7 @@ export function MainNavbarView({
                 aria-label="collection-tree"
               />
             </ErrorBoundary>
-          </SidebarSection>
+          </SidebarSection> */}
 
           <SidebarSection>
             <ErrorBoundary>
@@ -255,7 +255,7 @@ export function MainNavbarView({
             </ErrorBoundary>
           </SidebarSection>
 
-          {trashCollection && (
+          {false && (
             <TrashSidebarSection>
               <ErrorBoundary>
                 <Tree

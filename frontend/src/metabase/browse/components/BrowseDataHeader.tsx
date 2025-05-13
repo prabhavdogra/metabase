@@ -37,15 +37,16 @@ export const BrowseDataHeader = () => {
 };
 
 const LearnAboutDataLink = () => (
-  <Flex p=".75rem" justify="flex-end" align="center" gap="md">
-    <Link to="reference">
-      <BrowseHeaderIconContainer>
-        <LearnAboutDataIcon size={14} name="reference" />
-        <Text size="md" lh="1" fw="bold" ml=".5rem" c="inherit">
-          {t`Learn about our data`}
-        </Text>
-      </BrowseHeaderIconContainer>
-    </Link>
-    <PLUGIN_UPLOAD_MANAGEMENT.GdriveDbMenu />
-  </Flex>
+  <></>
+  // <Flex p=".75rem" justify="flex-end" align="center" gap="md">
+  //   <Link to="reference">
+  //     <BrowseHeaderIconContainer>
+  //       <LearnAboutDataIcon size={14} name="reference" />
+  //       <Text size="md" lh="1" fw="bold" ml=".5rem" c="inherit">
+  //         {t`Learn about our data`}
+  //       </Text>
+  //     </BrowseHeaderIconContainer>
+  //   </Link>
+  //   <PLUGIN_UPLOAD_MANAGEMENT.GdriveDbMenu />
+  // </Flex>
 );

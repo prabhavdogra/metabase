@@ -63,12 +63,12 @@ const CollapseSection = ({
     <div className={className} role="tab" aria-selected={isExpanded} {...props}>
       <HeaderContainer
         className={headerClass}
-        onClick={toggle}
+        // onClick={toggle}
         onKeyDown={onKeyDown}
       >
-        {iconPosition === "left" && HeaderIcon}
+        {/* {iconPosition === "left" && HeaderIcon} */}
         <Header>{header}</Header>
-        {iconPosition === "right" && HeaderIcon}
+        {/* {iconPosition === "right" && HeaderIcon} */}
       </HeaderContainer>
       <div role="tabpanel">
         {isExpanded && <div className={bodyClass}>{children}</div>}

@@ -183,12 +183,12 @@ export const ErrorDiagnosticModalTrigger = () => {
   return (
     <ErrorBoundary>
       <Stack justify="center" my="lg">
-        <Button
+        {/* <Button
           leftSection={<Icon name="download" />}
           onClick={() => setModalOpen(true)}
         >
           {t`Gather diagnostic information`}
-        </Button>
+        </Button> */}
       </Stack>
       <ErrorDiagnosticModalWrapper
         isModalOpen={isModalOpen}

@@ -49,7 +49,7 @@ export const AdminNavbar = ({
         <AdminLogoContainer>
           <LogoIcon className={cx(CS.textBrand, CS.my2)} dark />
           {/* eslint-disable-next-line no-literal-metabase-strings -- Metabase settings */}
-          <AdminLogoText>{t`Metabase Admin`}</AdminLogoText>
+          <AdminLogoText>{t`SQLAI Admin`}</AdminLogoText>
         </AdminLogoContainer>
       </AdminLogoLink>
 
@@ -67,7 +67,7 @@ export const AdminNavbar = ({
           ))}
         </AdminNavbarItems>
 
-        {!isPaidPlan && <StoreLink />}
+        {false && <StoreLink />}
         <AdminExitLink
           to="/"
           data-testid="exit-admin"

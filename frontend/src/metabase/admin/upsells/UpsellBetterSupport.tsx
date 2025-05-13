@@ -17,16 +17,17 @@ export const UpsellBetterSupport = ({ source }: { source: string }) => {
   }
 
   return (
-    <UpsellCard
-      title={t`Get expert help`}
-      campaign="better-hosting"
-      buttonText={t`Try for free`}
-      buttonLink={UPGRADE_URL}
-      source={source}
-    >
-      <div>{t`Unlimited support from success engineers whenever you need it with any paid plan.`}</div>
-      <div>{c("Reasons why paid support is better.")
-        .t`No chatbots, no hold lines, no customer service runaround.`}</div>
-    </UpsellCard>
+    <></>
+    // <UpsellCard
+    //   title={t`Get expert help`}
+    //   campaign="better-hosting"
+    //   buttonText={t`Try for free`}
+    //   buttonLink={UPGRADE_URL}
+    //   source={source}
+    // >
+    //   <div>{t`Unlimited support from success engineers whenever you need it with any paid plan.`}</div>
+    //   <div>{c("Reasons why paid support is better.")
+    //     .t`No chatbots, no hold lines, no customer service runaround.`}</div>
+    // </UpsellCard>
   );
 };
